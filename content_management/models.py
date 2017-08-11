@@ -36,3 +36,7 @@ class Content(models.Model):
     view_count = models.IntegerField(default=0)
 
     theme = models.ForeignKey(Theme)
+
+    # if for the owner of this content shop_activated=True, then the owner
+    # can put a price on its item.
+    price = models.IntegerField(default=0)

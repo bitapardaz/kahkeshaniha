@@ -27,7 +27,6 @@ class VoteType(models.Model):
 # a vote might be from a celebrity
 class VoteContent(models.Model):
     user = models.ForeignKey(User)
-    content = models.ForeignKey(Content)
     date_time = models.DateTimeField(auto_now=True)
     vote_type = models.ForeignKey(VoteType)
 
